@@ -1,0 +1,90 @@
+body {
+    font-family: 'Courier New Black', monospace;
+    font-size: 0.95rem;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+ #tiresult {
+    font-size: 4px !important;
+    line-height: 5px !important;
+    font-weight: bolder !important;
+    font-family: "Consolas", monospace !important;
+    --fs: 23px !important;
+    -webkit-text-size-adjust: none;
+ }
+ #tiresult-small {
+  font-size: 2px !important;
+  line-height: 2px !important;
+  font-weight: bolder !important;
+  font-family: "Consolas", monospace !important;
+  --fs: 23px !important;
+  -webkit-text-size-adjust: none;
+}
+
+ header {
+    position: relative;
+    background-color: white;
+    height: 200px;
+    min-height: 200px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.text-small {
+  font-size: 0.7rem;
+}
+
