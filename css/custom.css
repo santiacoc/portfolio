@@ -2,9 +2,31 @@ body {
     font-family: 'Courier New Black', monospace;
     font-size: 0.95rem;
 }
+html, body {
+  height:100%;
+}
+
+#wrapper {
+  position: relative;
+  min-height:100%;
+}
+
+#main {
+  padding-bottom: 70px;
+}
+
+footer {
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
 
 .container {
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 
@@ -13,10 +35,18 @@ body {
     box-shadow: none;
  }
 
+ .flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
  #tiresult {
     font-size: 4px !important;
     line-height: 5px !important;
     font-weight: bolder !important;
+    color: white;
     font-family: "Consolas", monospace !important;
     --fs: 23px !important;
     -webkit-text-size-adjust: none;
@@ -33,12 +63,12 @@ body {
  header {
     position: relative;
     background-color: white;
-    height: 200px;
     min-height: 200px;
     width: 100%;
     overflow: hidden;
     margin: 0;
     padding: 0;
+    background-color: black;
   }
   
   header video {
@@ -85,6 +115,6 @@ body {
   }
 
 .text-small {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
